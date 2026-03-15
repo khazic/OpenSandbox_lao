@@ -91,7 +91,7 @@ Before you start the server, edit the configuration file to suit your environmen
 
    [runtime]
    type = "docker"
-   execd_image = "opensandbox/execd:v1.0.6"
+   execd_image = "opensandbox/execd:v1.0.7"
 
    [docker]
    network_mode = "host"  # Containers share host network; only one sandbox instance at a time
@@ -107,7 +107,7 @@ Before you start the server, edit the configuration file to suit your environmen
 
    [runtime]
    type = "docker"
-   execd_image = "opensandbox/execd:v1.0.6"
+   execd_image = "opensandbox/execd:v1.0.7"
 
    [docker]
    network_mode = "bridge"  # Isolated container networking
@@ -219,7 +219,7 @@ EOF
    ```toml
    [runtime]
    type = "kubernetes"
-   execd_image = "opensandbox/execd:v1.0.5"
+   execd_image = "opensandbox/execd:v1.0.7"
 
    [kubernetes]
    kubeconfig_path = "~/.kube/config"
@@ -238,7 +238,7 @@ EOF
    ```toml
    [runtime]
    type = "docker"
-   execd_image = "opensandbox/execd:v1.0.6"
+   execd_image = "opensandbox/execd:v1.0.7"
    
    [egress]
    image = "opensandbox/egress:v1.0.3"
